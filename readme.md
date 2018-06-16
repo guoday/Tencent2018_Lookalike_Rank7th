@@ -13,13 +13,6 @@
 
 2. 特征工程说明：
 
-   - 基本特征：31个ID特征
-
-   - 长度特征：多值特征的长度，共11个特征（如interest的个数）
-
-   - 计数特征：uid的总数和正负样本数，uid和所有广告特性的正负样本数，共25个特征（如uid与advertiserId交叉ID出现的正负样本数）
-
-   - 总特征：31+11+25=67个
 
      
 
@@ -34,7 +27,8 @@
    | xdeepfm(单模型) |  0.763   |     0.766     |  0.770   |
    |  nffm+xdeepfm   |  0.768   |       -       |  0.7740  |
 
-  - nffm：nfm的变种，在Bi-Interaction中替换FFM，并且只使用用户与广告的交叉，https://arxiv.org/pdf/1708.05027v1.pdf，参数如下：
+  - nffm：nfm的变种，在Bi-Interaction中替换FFM，并且只使用用户与广告的交叉，https://arxiv.org/pdf/1708.05027v1.pdf.
+  参数如下：
 
       - embedding的维度：16
       - 优化器与学习率，batch大小：adam，0.00002，4096
@@ -43,7 +37,8 @@
       - epoch=1
 
 
-  - xdeepfm: https://arxiv.org/pdf/1803.05170.pdf，参数如下
+  - xdeepfm: https://arxiv.org/pdf/1803.05170.pdf.
+  参数如下
 
       - embedding的维度：16
       - 优化器与学习率，batch大小：adam，0.00002，4096
