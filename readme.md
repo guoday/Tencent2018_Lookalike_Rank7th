@@ -52,7 +52,7 @@
 
 4. 数据预处理：
    - 把初赛数据放在data/preliminary_data，把复赛数据放在data/final_data
-   - `python3 -u src/extract_features.py`  (如果不使用初赛数据，请在调用`pre_data`函数时，设置`preliminary_path=None`
+   - `python3 -u src/extract_features.py`  (如果不使用初赛数据，请在调用`pre_data`函数时，设置`preliminary_path=None`)
 
 
 
