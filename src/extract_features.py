@@ -8,7 +8,7 @@ import os
 threshold=100
 random.seed(2018)
 def pre_data(final_path=None,preliminary_path=None):
-    if final_path is None and preliminat_path is None:
+    if final_path is None and preliminary_path is None:
         raise "data path is invaild"
     elif final_path is None:
         raise "final data path is invalid"
